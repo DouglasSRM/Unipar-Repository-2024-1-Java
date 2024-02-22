@@ -1,6 +1,5 @@
 class Atividade {
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) {        
         int idade = 19;
         
         double peso = 20.54;
