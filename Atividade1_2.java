@@ -9,7 +9,7 @@ public class Atividade1_2 {
         int numeroProduto;
         double precoDoProduto;
         int estoqueDisponivel;
-        int totaldeProdutos;
+        int totalDeProdutos;
 
     }
 }
