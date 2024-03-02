@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Estrutura2902 {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         int menu = 0;
         int contadorPilha = 0;
@@ -18,59 +17,53 @@ public class Estrutura2902 {
             System.out.println("5 - Sair");
             menu = scanner.nextInt();
 
-            if (menu == 1){
-                if (contadorPilha < 8) {
-                    System.out.println("Inserir número na posição " + (contadorPilha + 1) + ": ");
-                    pilha[contadorPilha] = scanner.nextInt();
-                    contadorPilha++;
-                }
-                else {
-                    System.out.println("Pilha cheia!");
-                }
-                System.out.println();
-            }
-
-            if (menu == 2){
-                if (contadorPilha > 0) {
+            switch (menu) {
+                case 1:
+                    if (contadorPilha < 8) {
+                        System.out.println("Inserir número na posição " + (contadorPilha + 1) + ": ");
+                        pilha[contadorPilha] = scanner.nextInt();
+                        contadorPilha++;
+                    } else {
+                        System.out.println("Pilha cheia!");
+                    }
+                    System.out.println();
+                    break;
+                case 2:
+                    if (contadorPilha > 0) {
                     System.out.println("Zerando posição " + contadorPilha + "...");
                     contadorPilha--;
                     pilha[contadorPilha] = 0;
-                } else {
-                    System.out.println("Pilha zerada!");
-                }
-                System.out.println();
-            }
-
-            if (menu == 3){
-                if (contadorPilha > 0) {
-                    System.out.println("Ultimo input: " + pilha[contadorPilha - 1] + " na posição " + contadorPilha);
-                } else {
-                    System.out.println("Pilha zerada!");
-                }
-                System.out.println();
-            }
-
-            if (menu == 4){
-                if (contadorPilha > 0) {
-                    for (int contador = 0; contador < contadorPilha; contador++) {
-                        System.out.println((contador + 1) + ": " + pilha[contador]);
+                    } else {
+                        System.out.println("Pilha zerada!");
                     }
-                } else {
-                    System.out.println("Pilha zerada!");
-                }
-                System.out.println();
+                    System.out.println();
+                    break;
+                case 3:
+                    if (contadorPilha > 0) {
+                        System.out.println("Ultimo input: " + pilha[contadorPilha - 1] + " na posição " + contadorPilha);
+                    } else {
+                        System.out.println("Pilha zerada!");
+                    }
+                    System.out.println();
+                    break;
+                case 4:
+                    if (contadorPilha > 0) {
+                        for (int contador = 0; contador < contadorPilha; contador++) {
+                            System.out.println((contador + 1) + ": " + pilha[contador]);
+                        }
+                    } else {
+                        System.out.println("Pilha zerada!");
+                    }
+                    System.out.println();
+                    break;
+                case 5:
+                    System.out.println();
+                    System.out.println("Encerrando...");
+                    break;
+                default:
+                    System.out.println("Opção inválida!");
+                    System.out.println();
             }
-
-            if (menu == 5){
-                System.out.println();
-                System.out.println("Encerrando...");
-            }
-
-            if (menu > 5 || menu < 1){
-                System.out.println("Opção inválida!");
-                System.out.println();
-            }
-
         }
     }
 }
