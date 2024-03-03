@@ -22,7 +22,7 @@ public class ControleEstoque {
     private static int encontrouCodigo = 0;
 
     public static void main(String[] args) {
-        try{
+        try {
             int menu = 0;
             while (menu != 6){
                 exibirMenu();
@@ -59,7 +59,7 @@ public class ControleEstoque {
 
     //Método de processamento do menu principal
     private static void processarPrograma(int menu) {
-        switch (menu){
+        switch (menu) {
 
             case 1:
                 cadastrar();
@@ -86,7 +86,7 @@ public class ControleEstoque {
     }
 
     //Método cadastrar
-    public static void cadastrar(){
+    public static void cadastrar() {
         encontrouCodigo = 0;
         if (contadorProdutos < QUANTIDADE_PRODUTOS) {
             System.out.println("# Cadastrar Produto #");
@@ -136,13 +136,13 @@ public class ControleEstoque {
     }
 
     //Método deletar
-    public static void deletar(){
+    public static void deletar() {
         encontrouCodigo = 0;
         if (contadorProdutos > 0) {
             System.out.println("# Deletar Produto #");
             identificarProduto = getIdentificarProduto();
 
-            if (encontrouCodigo == 1){
+            if (encontrouCodigo == 1) {
                 System.out.println("Deletar produto '" + nomeDoProduto[identificarProduto] + "' ?");
                 System.out.println("1 - Sim");
                 System.out.println("2 - Não");
@@ -170,7 +170,7 @@ public class ControleEstoque {
     }
 
     //Método listar
-    public static void listar(){
+    public static void listar() {
         if (contadorProdutos > 0) {
             System.out.println("# Lista de Produtos #");
             for (contador = 0; contador < contadorProdutos; contador++) {
@@ -185,7 +185,7 @@ public class ControleEstoque {
     }
 
     //Método visualizar
-    public static void visualizar(){
+    public static void visualizar() {
 
         pegarCodigo = 0;
         encontrouCodigo = 0;
@@ -210,10 +210,8 @@ public class ControleEstoque {
     }
 
     //Método alterar
-    public static void alterar(){
+    public static void alterar() {
         encontrouCodigo = 0;
-        int confirmarAlterar = 0;
-
         if (contadorProdutos > 0) {
             System.out.println("# Alterar Produto #");
             identificarProduto = getIdentificarProduto();
@@ -222,7 +220,7 @@ public class ControleEstoque {
                 System.out.println("Alterar código?");
                 System.out.println("1 - Sim");
                 System.out.println("2 - Não");
-                confirmarAlterar = obterOpcaoUsuario();
+                int confirmarAlterar = obterOpcaoUsuario();
                 if (confirmarAlterar == 1 ) {
                     System.out.println("Novo código: ");
                     while (true) {
