@@ -1,6 +1,28 @@
+/**
+ *  "Vamos praticar a criação de variáveis, inicialização e exibição dos dados em Java!
+ *  Abaixo está um contexto onde você precisará criar variáveis para representar informações sobre
+ *  produtos em um estoque, inicializá-las com valores específicos e, em seguida, exibir esses dados."
+ *  Contexto:
+ *  "Você está desenvolvendo um programa de controle de estoque para uma loja de eletrônicos.
+ *  A loja possui diversos produtos em estoque, e você precisa criar variáveis para armazenar informações sobre alguns desses produtos."
+ *  Tarefas:
+ *  "Declare as variáveis necessárias para representar informações sobre os seguintes produtos:"
+ *  - Smartphone
+ *  - Laptop
+ *  - Fone de Ouvido Bluetooth
+ *  "Inicialize cada variável com valores específicos para representar os seguintes dados:"
+ *  - Nome do produto
+ *  - Marca do produto
+ *  - Preço do produto
+ *  - Quantidade em estoque
+ *  "Após a inicialização, exiba os dados de cada produto no console, como por exemplo:"
+ 
+ *      System.out.println("Dados do Smartphone:");
+ *      System.out.println("Nome: " + nomeSmartphone);
+ */
+
 public class Atividade1_5 {
     public static void main(String[] args){
-
         String nomeSmartphone = "Redmi 12";
         String nomeLaptop = "Aspire 5";
         String nomeFoneBluetooth = "AirPods Pro";
