@@ -24,7 +24,7 @@ public class ControleEstoque {
     public static void main(String[] args) {
         try {
             int menu = 0;
-            while (menu != 6){
+            while (menu != 6) {
                 exibirMenu();
                 menu = obterOpcaoUsuario();
                 processarPrograma(menu);
