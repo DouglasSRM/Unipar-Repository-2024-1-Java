@@ -1,7 +1,34 @@
+/**
+ * ENCONTRE O PROBLEMA E MOSTRE COMO AJUSTAR
+ * import java.util.Scanner;
+
+ * class HelloWorld {
+ *     public static void main(String[] args) {
+
+ *         String nome = "";
+ *         int idade = 0;
+ *         double peso = 0.0;
+
+ *         Scanner scanner = new Scanner(System.in);
+
+ *         System.out.println("Informe seus dados:  ");
+ *         idade = scanner.nextInt();
+ *         peso = scanner.nextDouble();
+ *         nome = scanner.nextLine();
+
+ *         scanner.close();
+
+ *         System.out.println("Nome "+ nome);
+ *         System.out.println("idade "+ idade);
+ *         System.out.println("peso "+ peso);
+ *     }
+ * }
+ */
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Atividade2 {
+public class Atividade2_1 {
 
     public static void main(String[] args) {
 
@@ -12,6 +39,7 @@ public class Atividade2 {
 
         System.out.println("Informe seus dados:  ");
 
+        // Para a declaração de idade, podemos utilizar uma estrutura try-catch para resolver o caso de InputMismatchException.
         System.out.println("Idade: ");
         while(true) {
             try {
@@ -24,6 +52,7 @@ public class Atividade2 {
             }
         }
 
+        // O mesmo se dá para a declaração da variável peso.
         System.out.println("Peso: ");
         while(true) {
             try {
@@ -36,8 +65,10 @@ public class Atividade2 {
             }
         }
 
+        // Por fim, utilizamos uma linha de quebra "scanner.nextLine();" antes da leitura da variável nome, para consumir
+        // o valor adicional imputado ao ler um valor "String" logo após um valor "double" ou "int".
         System.out.println("Nome: ");
-        scanner.nextLine();
+        scanner.nextLine(); // Consumir a linha pendente.
         nome = scanner.nextLine();
 
         scanner.close();
