@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  *  3. Verificação de login:
  *  Crie um programa Java que pede ao usuário para inserir seu nome de usuário e senha.
@@ -6,4 +8,23 @@
  */
 
 public class Atividade4_IF03 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String nome;
+        String senha;
+        try {
+            System.out.println("Usuário: ");
+            nome = scanner.nextLine();
+            System.out.println("Senha: ");
+            senha = scanner.nextLine();
+          
+            if (nome.equals("usuario") && senha.equals("senha123")) {
+                System.out.println("Login bem-sucedido!");
+            } else {
+                System.out.println("Nome de usuário ou senha incorretos!");
+            }
+        } finally {
+            scanner.close();
+        }
+    }
 }
