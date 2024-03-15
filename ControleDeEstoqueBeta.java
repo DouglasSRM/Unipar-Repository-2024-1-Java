@@ -2,6 +2,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
+ * Continuação da atividade 1_4
  * Programa de Controle de Estoque com opções básicas.
  * Menu interativo com possibilidade de cadastro, remoção, listagem e alteração de produtos.
  */
