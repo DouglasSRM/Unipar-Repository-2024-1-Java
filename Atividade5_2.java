@@ -27,10 +27,15 @@ public class Atividade5_2 {
         try {
             patinhos = pegarPatinhos();
 
-            for(int contador = 1; contador < patinhos-1; contador++) {
+            for(int contador = 1; contador < patinhos; contador++) {
                 int atualPatinhos = patinhos + 1 - contador;
-                System.out.println(atualPatinhos + " patinhos foram passear, Além das montanhas Para brincar");
-                System.out.println("A mamãe gritou: Quá, quá, quá, quá. Mas só " + (atualPatinhos - 1) +" patinhos voltaram de lá.");
+                if(atualPatinhos == 2) {
+                    System.out.println(atualPatinhos + " patinhos foram passear, Além das montanhas Para brincar");
+                    System.out.println("A mamãe gritou: Quá, quá, quá, quá. Mas só " + (atualPatinhos - 1) +" patinho voltou de lá.");
+                } else {
+                    System.out.println(atualPatinhos + " patinhos foram passear, Além das montanhas Para brincar");
+                    System.out.println("A mamãe gritou: Quá, quá, quá, quá. Mas só " + (atualPatinhos - 1) + " patinhos voltaram de lá.");
+                }
             }
             System.out.println(1 + " patinho foi passear, Além das montanhas Para brincar");
             System.out.println("A mamãe gritou: Quá, quá, quá, quá. Mas nenhum patinho voltou de lá.");
