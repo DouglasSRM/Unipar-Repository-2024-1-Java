@@ -7,7 +7,7 @@ import java.util.Scanner;
  * adicionar, remover, verificar ultima posição (topo) e listar elementos.
  */
 
-public class EstruturaDeDados2 {
+public class EstruturaDeDados2_1 {
     private static final Scanner scanner = new Scanner(System.in);
     private static final int TAMANHO_FILA = 5;
     private static final int[] fila = new int[TAMANHO_FILA];
