@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Utiliza um menu interativo que apresenta as opções básicas de epmilhar, desempilhar, verificar o topo e listar elementos.
  */
 
-public class EstruturaDeDados1 {
+public class EstruturaDeDados1_1 {
     private static final int TAMANHO_PILHA = 8;
     private static final int[] pilha = new int[TAMANHO_PILHA];
     private static int menu = 0;
