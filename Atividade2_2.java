@@ -1,6 +1,10 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ *   Crie um programa que converta Celsius para Fahrenheit e vice-versa;
+ */
+
 public class Atividade2_2 {
 
     private static Scanner scanner = new Scanner(System.in);
@@ -17,7 +21,7 @@ public class Atividade2_2 {
                         celciusParaFahrenheit();
                         break;
                     case 2:
-                        fahrenheitParaCelcius();
+                        fahrenheitParaCelsius();
                         break;
                     case 3:
                         System.out.println("Programa encerrado com sucesso.");
@@ -63,7 +67,7 @@ public class Atividade2_2 {
         System.out.println();
     }
 
-    private static void fahrenheitParaCelcius() {
+    private static void fahrenheitParaCelsius() {
         System.out.println("Informe a temperatura em Fahrenheit: ");
         while (true) {
             try {
@@ -75,7 +79,7 @@ public class Atividade2_2 {
             }
         }
         valorCelsius = (valorFahrenheit - 32) / 1.8;
-        System.out.println("Valor em Celcius " + valorCelsius);
+        System.out.println("Valor em Celsius " + valorCelsius);
         System.out.println();
     }
 }
