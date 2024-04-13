@@ -16,17 +16,21 @@ public class Atividade5_3 {
     private static int totalDias;
 
     public static void main(String[] args) {
-        System.out.println("A seguir, digite sua idade em anos, meses e dias.");
-        System.out.println("Anos: ");
-        anos = getInt();
-        System.out.println("Meses: ");
-        meses = getInt();
-        System.out.println("Dias: ");
-        dias = getInt();
+        try {
+            System.out.println("A seguir, digite sua idade em anos, meses e dias.");
+            System.out.println("Anos: ");
+            anos = getInt();
+            System.out.println("Meses: ");
+            meses = getInt();
+            System.out.println("Dias: ");
+            dias = getInt();
 
-        totalDias = (anos * 365) + (meses * 30) + dias;
+            totalDias = (anos * 365) + (meses * 30) + dias;
 
-        System.out.println(anos + " anos, " + meses + " meses e " + dias + " dias = " + totalDias + " dias");
+            System.out.println(anos + " anos, " + meses + " meses e " + dias + " dias = " + totalDias + " dias");
+        } finally {
+            scanner.close();
+        }
     }
 
     private static int getInt() {
