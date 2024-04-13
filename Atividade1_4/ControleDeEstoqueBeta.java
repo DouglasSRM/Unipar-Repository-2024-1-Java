@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Menu interativo com possibilidade de cadastro, remoção, listagem e alteração de produtos.
  */
 
-public class ControleEstoqueBeta {
+public class ControleDeEstoqueBeta {
 
     private static final Scanner scanner = new Scanner(System.in);
     private static final int QUANTIDADE_PRODUTOS = 10;
