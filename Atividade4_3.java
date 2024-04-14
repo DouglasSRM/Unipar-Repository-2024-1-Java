@@ -7,7 +7,7 @@ import java.util.Scanner;
  *  Caso contrário, deve imprimir "Nome de usuário ou senha incorretos".
  */
 
-public class Atividade4_IF03 {
+public class Atividade4_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String nome;
