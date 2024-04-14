@@ -7,7 +7,7 @@ import java.util.Scanner;
  *  O programa deve então determinar qual dos dois números é o maior e imprimir essa informação.
  */
 
-public class Atividade4_IF04 {
+public class Atividade4_4 {
     private static final Scanner scanner = new Scanner(System.in);
     private static int numero1;
     private static int numero2;
