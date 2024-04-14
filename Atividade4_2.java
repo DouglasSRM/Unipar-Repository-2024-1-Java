@@ -7,7 +7,7 @@ import java.util.Scanner;
  *  O programa deve então verificar se o número é par ou ímpar e imprimir a mensagem correspondente.
  */
 
-public class Atividade4_IF02 {
+public class Atividade4_2 {
     private static final Scanner scanner = new Scanner(System.in);
     private static boolean repetir = true;
     private static int numero;
