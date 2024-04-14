@@ -8,7 +8,7 @@ import java.util.Scanner;
  *  Se for, deve imprimir "Você é maior de idade". Caso contrário, deve imprimir "Você é menor de idade".
  */
 
-public class Atividade4_IF01 {
+public class Atividade4_1 {
 
     private static final Scanner scanner = new Scanner(System.in);
     private static int idade;
